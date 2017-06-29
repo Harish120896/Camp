@@ -8,10 +8,9 @@ var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 
+var uri = process.env.MONGO_URI;
 
 mongoose.Promise = global.Promise;
-
-var uri = process.env.MONGO_URI;
 
 mongoose.connect(uri);
 var db = mongoose.connection;

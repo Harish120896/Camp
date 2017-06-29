@@ -18,7 +18,19 @@ var Camp = new Schema({
         type : String,
         required : true
     },
+    address: {
+        type : String,
+        required : true 
+    },
     email:   {
+        type: String,
+        required : true
+    },
+    latitude: {
+        type: String,
+        required : true
+    },
+    longitude: {
         type: String,
         required : true
     }
